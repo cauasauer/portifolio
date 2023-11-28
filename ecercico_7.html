@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>número do seu cartão</title>
+    <title>número da Placa</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,16 +49,16 @@
 </head>
 
 <body>
-    <h1>Número do seu cartão</h1>
+    <h1>Número da sua placa de carro</h1>
 
-    <label for="nome">Digite seu cartão:</label>
-    <input type="text" id="nome" placeholder="Seu nome">
+    <label for="nome">Digite sua placa:</label>
+    <input type="text" id="nome" placeholder="Sua Placa">
     <button id="meuBotao">Clique-me!</button>
     <button id="limparBotao">Limpar</button>
 
     <p id="minhaMensagem"></p>
 
-    <h2>cartão clonados:</h2>
+    <h2>Placa clonada:</h2>
     <ul id="nomesDigitados"></ul>
 
     <script>
@@ -68,7 +68,7 @@
            
             if (nome) {
                
-                document.getElementById("minhaMensagem").innerHTML = "valeu trouxa " + nome + "!";
+                document.getElementById("minhaMensagem").innerHTML = "valeu trouxa, " + nome + "!";
 
                 
                 let listaNomes = document.getElementById("nomesDigitados");
@@ -83,7 +83,7 @@
                 listaNomes.appendChild(li);
             } else {
                
-                document.getElementById("minhaMensagem").innerHTML = "Por favor, digite seu nome.";
+                document.getElementById("minhaMensagem").innerHTML = "Por favor, digite sua placa.";
             }
         });
 
